@@ -1,0 +1,5 @@
+filename = input("filename is :\t")
+
+file_extension = filename.split(".")
+
+print("extension is :\t",(file_extension[-1]))
