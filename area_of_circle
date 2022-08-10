@@ -1,0 +1,4 @@
+r =float(input("enter the radius of circle :\t"))
+res = 3.14*r*r;
+float(res)
+print("area of circle is ", res)
