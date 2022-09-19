@@ -1,0 +1,25 @@
+import random
+
+n=int(input("Enter no.of players:")
+    
+players=[]
+for i in range(1,n+1):
+    print("player no:",i)
+    inp=input("Enter player name:")
+    players.append(inp)
+    
+print("players are:",players)
+team1=[]
+team2=[]
+team1=set(random.sample(players,n//2))
+team1=list(team1)
+for char in players:
+    if char not in team1:
+        team2.append(char)
+
+print("Team1 players are:",team1)
+
+print("Team2 players are:",team2)
+
+
+
