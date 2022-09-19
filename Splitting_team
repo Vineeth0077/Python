@@ -1,0 +1,57 @@
+import random
+
+n=int(input("Enter no.of players:"))
+players=[]
+team1=[]
+reamining=[]
+team2=[]
+
+if(n>0 and n%2==0):
+    for i in range(1,n+1):
+        print("player no:",i)
+        inp=input("Enter player name:")
+        players.append(inp)
+    
+    print("players are:",players)
+    team1=set(random.sample(players,n//2))
+    team1=list(team1)
+
+
+    for char in players:
+        if char not in team1:
+            test2.append(char)
+            
+    print("Team1 players are:",team1)
+
+    print("Team2 players are:",team2)
+
+            
+elif(n>0 and n%2==1):
+    for i in range(1,n+1):
+        print("player no:",i)
+        inp=input("Enter player name:")
+        players.append(inp)
+        
+    print("players are:",players)
+    team1=set(random.sample(players,n//2))
+    team1=list(team1)
+    
+    for char in players:
+        if char not in team1:
+            reamining.append(char)
+            
+    team2=random.sample(reamining,n//2)
+    joker=" "
+    for char in reamining:
+        if char not in team2:
+            joker=char
+    print("Team1 players are:",team1)
+
+    print("Team2 players are:",team2)
+
+    print("Joker is:",joker)
+
+
+
+
+
