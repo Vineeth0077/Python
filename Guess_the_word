@@ -1,0 +1,45 @@
+import random
+
+name=input("Enter Your name:")
+
+print("Good Luck!",name)
+print("Game Starts......")
+
+words=["hello","world","happy","sorrow","knowledge","madam","victory","enjoy"]
+
+word=random.choice(words)
+
+guesses=""
+
+turns=random.randint(len(word),len(word)+2)
+print("Turns available are ",turns)
+
+while(turns>0):
+    failure=0
+    for char in word:
+        if char in guesses:
+            print(char)
+        else:
+            print('_')
+            failure=failure+1 
+        
+    if(failure==0):
+        print("You win!")
+        print("Congratulations!!!",name)
+        print("The word is",word)
+        break
+    
+    guess=input("Guess chracter:")
+    
+    guesses=guesses+guess
+    if guess not in word:
+        turns=turns-1
+        print("Worng charcter!")
+        print("You still have",+turns," chances")
+        
+    if turns==0:
+        print("You Loose!")
+        print("Better Luck next time!!!")
+        print("The original Word is",word)
+    
+        
