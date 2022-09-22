@@ -1,0 +1,18 @@
+
+import time
+
+def countdown(t):
+ 
+ while t:
+  mins, secs = divmod(t, 60) #divmod(a,b) gives gives the quotient & remainder of a//b 
+  timer = '{:02d}:{:02d}'.format(mins, secs) # formating mins and secs
+  print(timer, end="\r")
+  time.sleep(1) # delays the output or the displaying with given amount of time!!
+  t -= 1
+ 
+ print("Timer Done!!!")
+
+
+
+t = input("Enter the time in seconds: ")
+countdown(int(t))
