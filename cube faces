@@ -1,0 +1,16 @@
+def cube(n):
+    total=n**3
+    print("Total no.of cubes are:",total)
+    
+    three=8
+    two=12*(n-2)
+    one=6*((n-2)**2)
+    zero=(n-2)**3
+    
+    print("3 sided colored cubes are:",three)
+    print("2 sided colored cubes are:",two)
+    print("1 sided colored cubes are:",one)
+    print("0 sided colored cubes are:",zero)
+n=int(input("Enter n*n cube size:"))
+cube(n)
+    
