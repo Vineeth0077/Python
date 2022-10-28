@@ -19,7 +19,7 @@ if(n>0 and n%2==0):
 
     for char in players:
         if char not in team1:
-            test2.append(char)
+            team2.append(char)
             
     print("Team1 players are:",team1)
 
