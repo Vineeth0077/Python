@@ -1,0 +1,26 @@
+Key.cmd is pressed at  : 2022-12-26 12:30:57,775
+'n' is pressed at  : 2022-12-26 12:30:58,193
+Unhandled exception in listener callback : 2022-12-26 12:30:58,310
+Traceback (most recent call last):
+  File "C:\Users\chitr\anaconda3\lib\site-packages\pynput\_util\__init__.py", line 228, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\chitr\anaconda3\lib\site-packages\pynput\keyboard\_win32.py", line 290, in _process
+    self.on_release(key)
+  File "C:\Users\chitr\anaconda3\lib\site-packages\pynput\_util\__init__.py", line 144, in inner
+    if f(*args) is False:
+  File "C:\Users\chitr\OneDrive\Desktop\DONE\keylogger.py", line 11, in while_release
+    if key==key.esc:
+AttributeError: 'KeyCode' object has no attribute 'esc'
+Key.cmd is pressed at  : 2022-12-26 12:33:02,791
+'h' is pressed at  : 2022-12-26 12:33:03,206
+Unhandled exception in listener callback : 2022-12-26 12:33:03,293
+Traceback (most recent call last):
+  File "C:\Users\chitr\anaconda3\lib\site-packages\pynput\_util\__init__.py", line 228, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\chitr\anaconda3\lib\site-packages\pynput\keyboard\_win32.py", line 290, in _process
+    self.on_release(key)
+  File "C:\Users\chitr\anaconda3\lib\site-packages\pynput\_util\__init__.py", line 144, in inner
+    if f(*args) is False:
+  File "C:\Users\chitr\OneDrive\Desktop\DONE\keylogger.py", line 11, in while_release
+    if Key==key.esc:
+AttributeError: 'KeyCode' object has no attribute 'esc'
